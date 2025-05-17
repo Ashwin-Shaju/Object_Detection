@@ -97,12 +97,12 @@ def log_detection(detected_objects, confidences, frame, boxes, class_ids, classe
             f.writelines(log_entries)
 def load_yolo():
     """Loads YOLOv4-tiny model"""
-    net = cv2.dnn.readNet(r"D:\\Python\\yolov4-tiny.weights", r"D:\\Python\\yolov4-tiny.cfg")
+    net = cv2.dnn.readNet(r"D:\\Python\\yolov4-tiny.weights", r"D:\\Python\\yolov4-tiny.cfg") #change path
 
     net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
     net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
 
-    with open(r"D:\\Python\\coco.names", "r") as f:
+    with open(r"D:\\Python\\coco.names", "r") as f:  #change path
         classes = [line.strip() for line in f.readlines()]
 
     layer_names = net.getLayerNames()

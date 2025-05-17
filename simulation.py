@@ -16,8 +16,8 @@ import winsound
 
 last_notification_time = 0 
 
-TELEGRAM_BOT_TOKEN = "7914929733:AAGnbIUHRpxEhYAn_Cfa4PSsKKnjrAhYzaI"
-TELEGRAM_CHAT_IDS = ["6116452871", "6333367125"] 
+TELEGRAM_BOT_TOKEN = "<YOUR_TOKEN>"
+TELEGRAM_CHAT_IDS = ["<YOUR_CHAT_ID>"] 
 
 # Initialize Aiogram Bot with correct parameters
 bot = Bot(token=TELEGRAM_BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
